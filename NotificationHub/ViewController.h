@@ -21,6 +21,16 @@
 
 @property (copy, nonatomic) NSString *statusResult;
 @property (copy, nonatomic) NSString *currentElement;
+@property (weak, nonatomic) IBOutlet UITextField *UsernameField;
+@property (weak, nonatomic) IBOutlet UITextField *PasswordField;
+@property (weak, nonatomic) IBOutlet UITextField *RecipientField;
+@property (weak, nonatomic) IBOutlet UITextField *NotificationField;
+@property (weak, nonatomic) IBOutlet UIButton *LogInButton;
+@property (weak, nonatomic) IBOutlet UIButton *SendNotificationButton;
+@property (weak, nonatomic) IBOutlet UISwitch *WNSSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *GCMSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *APNSSwitch;
+- (IBAction)LogInAction:(id)sender;
 
 @end
 
